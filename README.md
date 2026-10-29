@@ -2,10 +2,12 @@
 
   Projeto desenvolvido durante meus estudos de Python com o objetivo de praticar lógica de programação.
 
-# Objetivo
+  Comecei desenvolvendo o projeto me desafiando a estruturá-lo com base na apresentação feita no terminal pelo orientador do meu curso de lógica. 
+  
+  Consegui estruturar o menu, organizar as funções e implementar as operações matemáticas.
 
-  Comecei desenvolvendo o projeto me desafiando a estruturá-lo com base na apresentação feita no terminal pelo orientador do meu curso de lógica. Consegui estruturar o menu, organizar as funções e implementar as operações matemáticas.
   Durante o desenvolvimento encontrei dificuldades na parte de tratamento de entradas, formatação dos resultados e tratamento de exceções. A partir desse momento procurei orientação e apliquei ao código. Exemplos: Englobando as operações em um while, usando break e continue nas condicionais.
+  
   Esse processo me permitiu aprender novos recursos da linguagem e entender melhor como organizar e saber quando parar e continuar o fluxo da aplicação.
 
 # Funcionalidades

@@ -1,6 +1,7 @@
 ''' Calculadora em Python refatorada de um projeto que ja tinha feito a muito tempo de projeto1_calculadora.py, aqui usando conceitos que simulam nossa calculadora do notebook ou celular, dando um valor atual e usando esse valor para fazer as operações.'''
 from math import sqrt, log2
 
+
 def soma (a, b):
     return a + b
   
