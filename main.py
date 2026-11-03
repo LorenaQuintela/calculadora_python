@@ -1,5 +1,9 @@
 ''' Calculadora em Python refatorada de um projeto que ja tinha feito a muito tempo de projeto1_calculadora.py, aqui usando conceitos que simulam nossa calculadora do notebook ou celular, dando um valor atual e usando esse valor para fazer as operações.'''
 from math import sqrt, log2
+from termcolor import colored
+import subprocess
+
+subprocess.run("color", shell=True)
 
 
 def soma (a, b):
@@ -40,6 +44,17 @@ def formatar_resultado(resultado):
    
    return resultado
 
+def colorir_resultado(resultado_formatado):
+  cor_resultado = ""
+
+  if resultado_formatado >= 0:
+    cor_resultado = "green"
+  else:
+    cor_resultado = "red"
+
+  resultado_colorido = colored(resultado_formatado, cor_resultado)
+  return resultado_colorido
+
 def main():
   opcoes_validas = {"1", "2", "3", "4", "5", "6", "0"}
 
@@ -51,7 +66,9 @@ def main():
     
   while True:
     resultado_formatado = formatar_resultado(resultado_atual)
-    print(f"Resultado atual: {resultado_formatado}\n")
+    resultado_colorido = colorir_resultado(resultado_formatado)
+
+    print(f"Resultado atual: {resultado_colorido}\n")
     exibir_menu()
 
     opcao_escolhida = input('Digite sua opção: (1/2/3/4/5/6/0): ')
